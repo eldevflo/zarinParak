@@ -1,0 +1,39 @@
+@use "./home.scss";
+@use "./navigation.scss";
+@use "./intention.scss";
+@use "./product-card.scss";
+@use "./footer.scss";
+:root {
+  --primary: #2c1998;
+  --secondary: hsla(271, 56%, 33%, 1);
+  --max-content-width: 1400px;
+}
+@font-face {
+  font-family: "IRANSans";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/Fonts/iransans/IRANSansWeb\(FaNum\).ttf");
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: IRANSans, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+p,
+h1,
+h2,
+h5,
+h6,
+small,
+h3,
+a,
+input,
+select,
+span,
+div {
+  font-family: IRANSans, sans-serif !important;
+}

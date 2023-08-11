@@ -1,0 +1,33 @@
+.intention {
+  position: relative;
+  &__box {
+    width: 100%;
+    height: 245px;
+    background-color: var(--primary);
+  }
+  &__garbages {
+    position: absolute;
+    left: 50%;
+    // transform: translateX(-50%);
+    // right: 0;
+    transform: translate(-50%, -80%);
+  }
+  &__funnel {
+    display: flex;
+    justify-content: center;
+    img {
+      z-index: 10;
+    }
+  }
+  &__granols {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__singles {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

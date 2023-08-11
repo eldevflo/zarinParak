@@ -1,0 +1,66 @@
+.home {
+  position: relative;
+  &__hero {
+    position: relative;
+    &__image {
+      width: 100%;
+      height: auto;
+      max-height: 100vh;
+      vertical-align: middle;
+      z-index: -1;
+    }
+    &__intro {
+      color: var(--secondary);
+      position: absolute;
+      top: 200px;
+      width: 100%;
+      text-align: right;
+      max-width: var(--max-content-width);
+      margin: 0 auto;
+      right: 0;
+      left: 0;
+
+      h1 {
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+    }
+  }
+  &__products {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 807px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0.8) 100%
+      ),
+      url("../assets/images/bannerbg.jpg"), lightgray 50% / cover no-repeat;
+
+    &__title {
+      h1 {
+        color: #fff;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      margin-bottom: 55px;
+    }
+    &__list {
+      // max-width: var(--max-content-width);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: center;
+      grid-gap: 24px;
+    }
+  }
+}
