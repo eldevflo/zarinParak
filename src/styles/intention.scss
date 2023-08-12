@@ -7,14 +7,25 @@
   }
   &__garbages {
     position: absolute;
-    left: 50%;
     // transform: translateX(-50%);
     // right: 0;
-    transform: translate(-50%, -80%);
+    // transform: translate(-50%, -80%);
+    width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: -5%;
+    right: 0;
+    bottom: 60%;
   }
   &__funnel {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
     img {
       z-index: 10;
     }
@@ -24,10 +35,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 80px;
     &__singles {
       display: flex;
       justify-content: center;
       align-items: center;
+      position: absolute;
+      bottom: 0;
     }
   }
 }
