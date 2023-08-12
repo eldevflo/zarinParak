@@ -34,7 +34,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 807px;
+    min-height: 807px;
     background-position: center;
     background-repeat: no-repeat;
     background: linear-gradient(
@@ -55,10 +55,13 @@
       margin-bottom: 55px;
     }
     &__list {
-      // max-width: var(--max-content-width);
+      max-width: var(--max-content-width);
+      width: 100%;
       margin: 0 auto;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      // grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+
       justify-content: center;
       grid-gap: 24px;
     }

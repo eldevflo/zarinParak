@@ -3,7 +3,7 @@ import Logo from "../UI/icons/Logo";
 
 function Navigation() {
   return (
-    <nav className="nav">
+    <nav className="nav container">
       <div className="nav__phone">
         <Phone />
       </div>
