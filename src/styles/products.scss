@@ -1,0 +1,11 @@
+.products {
+  &__title h1 {
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 24px;
+    color: var(--primary);
+  }
+}

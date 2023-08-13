@@ -1,5 +1,5 @@
 .about {
-  background-color: var(--primary);
+  //   background-color: var(--primary);
   &__section {
     &__title {
       font-size: 64px;
@@ -7,11 +7,13 @@
       font-weight: 700;
       line-height: normal;
       text-align: center;
-      color: #fff;
+      color: var(--primary);
+
       margin-bottom: 24px;
     }
     &__text {
-      color: #fff;
+      //   color: #fff;
+      color: black;
       font-size: 18px;
       font-weight: 300;
       text-align: justify;

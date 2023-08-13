@@ -39,7 +39,7 @@ function Navigation() {
           <a href="/about"> {t("nav.about")}</a>
         </li>
         <li className="nav__link">
-          <a href="">{t("nav.products")}</a>
+          <a href="/products">{t("nav.products")}</a>
         </li>
         <li className="nav__link">
           <a href="">{t("nav.articles")}</a>

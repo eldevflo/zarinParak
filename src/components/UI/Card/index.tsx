@@ -1,22 +1,28 @@
 import React from "react";
-import { Product } from "../../types/Product";
+import { Product } from "../../../types/Product";
 
-function ProductCard({ product }: { product: Product }) {
+function Card({ item, language = "fa" }: { item: Product; language?: string }) {
   return (
-    <div className="product-card">
-      <div className="product-card__image">
-        <img src={product.image} alt={product.name} />
+    <div className="card">
+      <div className="card__image">
+        <img src={item.image} alt={item.name} />
       </div>
-      <div className="product-card__caption">
-        <div className="product-card__title">
-          <h3>{product.name.substring(0, 20)}</h3>
+      <div className="card__footer">
+        <div className="card__caption">
+          <div className="card__title">
+            <h3>
+              {language === "fa"
+                ? item.name.substring(0, 20)
+                : item.English_name.substring(0, 20)}
+            </h3>
+          </div>
+          <div className="card__description">
+            {item.comment_admin}
+            گرانول پت یکی از انواع فرآورده‌های حاصل از پلیمرهای شیمیایی است که
+            به صورت دانه‌های ریز و کریستالی ساخته می‌شود.
+          </div>
         </div>
-        <div className="product-card__description">
-          {product.comment_admin}
-          گرانول پت یکی از انواع فرآورده‌های حاصل از پلیمرهای شیمیایی است که به
-          صورت دانه‌های ریز و کریستالی ساخته می‌شود.
-        </div>
-        <div className="product-card__link">
+        <div className="card__link">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="59"
@@ -48,4 +54,4 @@ function ProductCard({ product }: { product: Product }) {
   );
 }
 
-export default ProductCard;
+export default Card;

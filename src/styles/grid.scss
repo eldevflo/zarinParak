@@ -1,0 +1,11 @@
+.grid {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   width: 100%;
+  //   justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 24px;
+  grid-row-gap: 32px;
+}
