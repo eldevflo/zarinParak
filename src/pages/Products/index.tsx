@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { request } from "../../utils/request";
 import { useTranslation } from "react-i18next";
 import Grid from "../../components/UI/Grid";
+import Loading from "../../components/UI/Loainding";
 
 function Products() {
   const [products, setProducts] = useState([]);
@@ -22,9 +23,15 @@ function Products() {
         <div className="products__title">
           <h1>{t("titles.products")}</h1>
         </div>
-        <div className="products__body">
-          {loading ? "loading" : <Grid list={products} />}
-        </div>
+        {loading ? (
+          <div className="loading">
+            <Loading />
+          </div>
+        ) : (
+          <div className="products__body">
+            <Grid list={products} />
+          </div>
+        )}
       </div>
     </div>
   );

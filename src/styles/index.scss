@@ -57,3 +57,11 @@ body {
   min-height: 100vh;
   padding-top: 150px;
 }
+.loading {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
