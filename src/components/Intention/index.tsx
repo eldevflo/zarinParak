@@ -6,12 +6,15 @@ import granolHill from "../../assets/images/granols.png";
 import { gsap } from "gsap";
 import { useLayoutEffect, useRef } from "react";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { useTranslation } from "react-i18next";
 gsap.registerPlugin(ScrollTrigger);
 function Intention() {
   const garbageRef = useRef<HTMLDivElement>(null);
+  const { t } = useTranslation();
+
   useLayoutEffect(() => {
     gsap.to(".intention__garbages", {
-      y: 200,
+      y: 300,
       duration: 5,
       scrollTrigger: {
         trigger: ".intention__garbages",
@@ -19,12 +22,12 @@ function Intention() {
       },
     });
     gsap.to(".intention__granols__singles", {
-      y: 150,
+      y: 180,
       duration: 2,
       scrollTrigger: {
-        trigger: ".intention__granols__singles",
+        trigger: ".intention__granols__hill",
         scrub: true,
-        start: "top center",
+        start: "top +=100 ",
       },
     });
   }, []);
@@ -36,6 +39,7 @@ function Intention() {
       </div>
       <div className="intention__funnel">
         <img src={funnel} alt="" />
+        <div className="intention__title">{t("intentions.title")}</div>
         <div className="intention__granols__singles">
           <div className="intention__granols__right">
             <img src={blueGranol} alt="" />
