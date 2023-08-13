@@ -5,4 +5,5 @@ export interface Product {
   information: string;
   comment_admin: string;
   image: string;
+  English_name: string;
 }

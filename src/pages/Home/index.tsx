@@ -1,8 +1,13 @@
 import Intention from "../../components/Intention";
 import hero from "../../assets/images/hero.png";
 import Products from "../../components/Products";
+import { useTranslation } from "react-i18next";
+import Articles from "../../components/Articles";
 
 function Home() {
+  const { t, i18n } = useTranslation();
+  console.log(i18n.language);
+
   return (
     <div className="home">
       <div className="home__hero">
@@ -14,12 +19,13 @@ function Home() {
           height={500}
         />
         <div className="home__hero__intro">
-          <h1>پیشرو در بازیافت ضایعات پلاستیک</h1>
+          <h1>{t("main.header")}</h1>
         </div>
       </div>
 
       <Intention />
       <Products />
+      <Articles />
     </div>
   );
 }

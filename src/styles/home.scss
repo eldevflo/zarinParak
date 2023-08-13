@@ -66,4 +66,34 @@
       grid-gap: 24px;
     }
   }
+  &__articles {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 807px;
+    background-color: #fff;
+
+    &__title {
+      h1 {
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      margin-bottom: 55px;
+    }
+    &__list {
+      max-width: var(--max-content-width);
+      width: 100%;
+      margin: 0 auto;
+      display: grid;
+      // grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+
+      justify-content: center;
+      grid-gap: 24px;
+    }
+  }
 }

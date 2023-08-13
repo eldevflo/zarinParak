@@ -1,0 +1,28 @@
+{
+  "main": {
+    "header": "Pioneer in plastic waste recycling"
+  },
+"nav":{
+    "home": "Home",
+    "about": "About Us",
+    "products": "Products",
+    "articles": "Articles",
+    "contact": "Contact"
+  },
+  "titles":{
+    "products":"Products",
+    "articles":"Articles"
+  },
+  "footer":{
+
+  },
+  "info": {
+    "companyName": "Zarin Parak Company",
+    "addressTitle": "Address",
+    "contactInfoTitle": "Contact Information",
+    "address": " Markazi Province, Delijan, Industrial City, Sarv 5th, Makan Talab Recycling center(Zarin Park)",
+    "postalCode": "postal code: 3799156737",
+    "description": "Zarin Park Plastic Recycling Company (Zarin Park) started its activities in the field of plastic waste recycling in 1396 (2017) after obtaining an operating license from the Ministry of Industry, Mines, and Trade of the country, located in the industrial city of Delijan. Until now, it has been serving the recycling industry and polymer industries of the country.This company is active in the milling, washing, shredding, and granulation of PET (Polyethylene Terephthalate), PE (Polyethylene), PP (Polypropylene), and BOPP polymers, always focusing on quality and customer satisfaction. Its products are used in various industries such as compounding, synthetic fibers, automotive parts, construction industries, agricultural industries, and more."
+
+  }
+}

@@ -1,8 +1,9 @@
 @use "./home.scss";
 @use "./navigation.scss";
 @use "./intention.scss";
-@use "./product-card.scss";
+@use "./card.scss";
 @use "./footer.scss";
+@use "./about.scss";
 :root {
   --primary: #2c1998;
   --secondary: hsla(271, 56%, 33%, 1);
