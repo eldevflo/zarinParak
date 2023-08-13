@@ -29,6 +29,7 @@
     padding: 0;
     color: black;
     display: flex;
+    flex-direction: row-reverse;
   }
   &__link {
     --gap: calc(48px / 2);

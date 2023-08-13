@@ -12,7 +12,8 @@
   },
   "titles":{
     "products": "محصولات",
-    "articles": "مقالات"
+    "articles": "مقالات",
+    "about":"درباره ما"
   }, 
   "info":{
     "companyName": "شرکت زرین پرک",
