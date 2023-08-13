@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { request } from "../../utils/request";
 import { useTranslation } from "react-i18next";
 import Grid from "../../components/UI/Grid";

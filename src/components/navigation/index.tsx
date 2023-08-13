@@ -19,9 +19,10 @@ function Navigation() {
         </div>
         <div className="nav__language">
           <button
-            onClick={() =>
-              i18n.changeLanguage(i18n.language == "fa" ? "en" : "fa")
-            }
+            onClick={() => {
+              i18n.changeLanguage(i18n.language == "fa" ? "en" : "fa");
+              localStorage.setItem("lang", i18n.language);
+            }}
           >
             {i18n.language == "fa" ? (
               <img src={iranFlag} alt="" />

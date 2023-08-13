@@ -1,4 +1,3 @@
-import React from "react";
 import { Product } from "../../../types/Product";
 
 function Card({ item, language = "fa" }: { item: Product; language?: string }) {
