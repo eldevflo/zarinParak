@@ -1,11 +1,13 @@
 .nav {
   &__wrapper {
-    position: absolute;
-    position: absolute;
-    top: 40px;
-    left: 0;
-    right: 0;
-    z-index: 9;
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      right: 0;
+      z-index: 9;
+    }
   }
   display: flex;
   justify-content: space-between;
@@ -64,5 +66,90 @@
       max-width: 18px;
       max-height: 18px;
     }
+  }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+.mobile-nav {
+  background-color: white;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  height: 60px;
+  padding-top: 16px;
+  &__menu {
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition-duration: 0.3s;
+    visibility: hidden;
+    transform: translateX(100%);
+    background-color: rgb(241, 239, 239);
+    padding-top: 20px;
+    box-shadow: 0px 18px 28px 0px rgba(16, 17, 19, 0.16);
+
+    &--open {
+      visibility: visible;
+      transform: translateX(20%);
+    }
+    &__head {
+      padding: 0 15px;
+      display: flex;
+      padding-right: calc(20% + 20px);
+
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &__links {
+    text-align: right;
+    padding-top: 20px;
+    a {
+      text-decoration: none;
+      color: var(--primary);
+      font-size: 22px;
+      font-weight: 500;
+      display: block;
+      padding: 5px 0;
+      padding-right: calc(20% + 20px);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.185);
+    }
+  }
+  &__logo {
+    img {
+      max-width: 100px;
+      height: auto;
+    }
+  }
+  &__actions {
+    display: flex;
+  }
+  &__phone,
+  &__language button {
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
+    width: 26px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+    outline: none;
+    margin-right: 5px;
+    color: white;
+    cursor: pointer;
   }
 }

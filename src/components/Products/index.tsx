@@ -3,6 +3,8 @@ import { request } from "../../utils/request";
 import { Product } from "../../types/Product";
 import { useTranslation } from "react-i18next";
 import Card from "../UI/Card";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import { Scrollbar, A11y, Navigation } from "swiper/modules";
 
 function Products() {
   const [products, setProducts] = useState([]);
@@ -26,6 +28,19 @@ function Products() {
           <Card item={product} key={product.id} language={i18n.language} />
         ))}
       </div>
+      {/* <Swiper
+        spaceBetween={12}
+        slidesPerView={3}
+        draggable={true}
+        onSwiper={(swiper) => console.log(swiper)}
+        onSlideChange={() => console.log("slide change")}
+      >
+        {products.map((product: Product) => (
+          <SwiperSlide>
+            <Card item={product} key={product.id} language={i18n.language} />
+          </SwiperSlide>
+        ))}
+      </Swiper> */}
     </div>
   );
 }

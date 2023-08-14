@@ -2,7 +2,6 @@ import Intention from "../../components/Intention";
 import hero from "../../assets/images/hero.png";
 import Products from "../../components/Products";
 import { useTranslation } from "react-i18next";
-import Articles from "../../components/Articles";
 
 function Home() {
   const { t, i18n } = useTranslation();
@@ -25,7 +24,7 @@ function Home() {
 
       <Intention />
       <Products />
-      <Articles />
+      {/* <Articles /> */}
     </div>
   );
 }

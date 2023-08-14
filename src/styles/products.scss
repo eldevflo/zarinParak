@@ -7,5 +7,48 @@
     text-align: center;
     margin-bottom: 24px;
     color: var(--primary);
+    @media screen and (max-width: 768px) {
+      font-size: 40px;
+    }
+  }
+}
+.product {
+  display: flex;
+  background-color: var(--primary);
+  margin-bottom: 24px;
+  border-radius: 20px;
+  color: white;
+  box-shadow: 0px 7.162499904632568px 7.162499904632568px 0px rgba(0, 0, 0, 0.2),
+    0px 7.162499904632568px 7.9583330154418945px 0px rgba(0, 0, 0, 0.25) inset;
+  @media screen and (max-width: 768px) {
+    max-height: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  img {
+    max-width: 300px;
+    height: auto;
+    vertical-align: middle;
+    border-left: 20px;
+    @media screen and (max-width: 768px) {
+      max-width: 150px;
+      height: 100%;
+    }
+  }
+  &__left {
+    padding: 16px 32px;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &__title {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: right;
+    @media screen and (max-width: 768px) {
+      font-size: 12px;
+    }
   }
 }

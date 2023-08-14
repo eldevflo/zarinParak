@@ -3,6 +3,7 @@ import { request } from "../../utils/request";
 import { useTranslation } from "react-i18next";
 import Grid from "../../components/UI/Grid";
 import Loading from "../../components/UI/Loainding";
+import { Product } from "../../types/Product";
 
 function Products() {
   const [products, setProducts] = useState([]);
@@ -29,7 +30,22 @@ function Products() {
           </div>
         ) : (
           <div className="products__body">
-            <Grid list={products} />
+            {products.map((product: Product) => (
+              <div className="product">
+                <div className="product__right">
+                  <img src={product.image} alt="" />
+                </div>
+                <div className="product__left">
+                  <div className="product__title">{product.name}</div>
+                  <div
+                    className="product__description"
+                    dangerouslySetInnerHTML={{
+                      __html: product.information,
+                    }}
+                  ></div>
+                </div>
+              </div>
+            ))}
           </div>
         )}
       </div>

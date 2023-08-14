@@ -55,7 +55,9 @@ body {
 }
 .page-content {
   min-height: 100vh;
-  padding-top: 150px;
+  @media screen and (min-width: 768px) {
+    padding-top: 150px;
+  }
 }
 .loading {
   width: 100%;

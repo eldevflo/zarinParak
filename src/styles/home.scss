@@ -26,6 +26,9 @@
         font-weight: 700;
         line-height: normal;
       }
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
     }
   }
   &__products {
@@ -34,7 +37,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: 807px;
+    @media screen and (min-width: 768px) {
+      min-height: 807px;
+    }
     background-position: center;
     background-repeat: no-repeat;
     background: linear-gradient(
@@ -51,6 +56,10 @@
         font-style: normal;
         font-weight: 700;
         line-height: normal;
+        @media screen and (max-width: 768px) {
+          font-size: 23px;
+          padding-top: 20px;
+        }
       }
       margin-bottom: 55px;
     }
@@ -64,6 +73,11 @@
 
       justify-content: center;
       grid-gap: 24px;
+      @media screen and (max-width: 768px) {
+        // display: none;
+
+        padding: 20px;
+      }
     }
   }
   &__articles {

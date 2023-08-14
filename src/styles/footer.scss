@@ -10,8 +10,15 @@
     align-items: flex-start;
     color: white;
     text-align: right;
+    @media screen and (max-width: 768px) {
+      flex-direction: column !important;
+      text-align: center !important;
+    }
   }
   &__intro {
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
     flex: 1;
     margin-left: 40px;
     &__title {
@@ -32,7 +39,11 @@
   &__address {
     flex: 1;
     margin-left: 40px;
-
+    @media screen and (max-width: 768px) {
+      border-bottom: 1px solid rgb(255, 255, 255);
+      padding-bottom: 16px;
+      margin-bottom: 20px;
+    }
     &__title {
       color: #fff;
       font-size: 20px;
@@ -43,6 +54,9 @@
       color: #fff;
       font-size: 18px;
       font-weight: 300;
+      // @media screen and (max-width: 768px) {
+      //   font-size: 8px;
+      // }
     }
   }
   &__media {
@@ -63,6 +77,9 @@
       font-weight: 300;
       line-height: normal;
       text-align: left;
+      @media screen and (max-width: 768px) {
+        text-align: center;
+      }
     }
     &__socials {
       display: flex;
