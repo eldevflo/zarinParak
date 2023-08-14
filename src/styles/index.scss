@@ -45,6 +45,10 @@ html,
 body {
   overflow-x: hidden;
 }
+a {
+  text-decoration: none;
+  color: white;
+}
 .container {
   max-width: var(--max-content-width);
   margin: auto;
@@ -66,4 +70,11 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+.contact-us {
+  p {
+    font-weight: 700;
+    margin: 20px 0;
+    text-align: right;
+  }
 }

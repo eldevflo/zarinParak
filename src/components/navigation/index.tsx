@@ -50,7 +50,7 @@ function Navigation() {
             <a href="/articles">{t("nav.articles")}</a>
           </li>
           <li className="nav__link">
-            <a href="">{t("nav.contact")}</a>
+            <a href="/contact-us">{t("nav.contact")}</a>
           </li>
         </ul>
         <div className="nav__logo">
@@ -150,7 +150,7 @@ function Navigation() {
               <a href="/articles">{t("nav.articles")}</a>
             </li>
             <li className="mobile-nav__link">
-              <a href="">{t("nav.contact")}</a>
+              <a href="/contact-us">{t("nav.contact")}</a>
             </li>
           </ul>
         </div>
