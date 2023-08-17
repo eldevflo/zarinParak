@@ -1,14 +1,14 @@
 .card {
   border-radius: 25px;
-  width: 382px;
   overflow: hidden;
   // box-shadow: 0px 7.162499904632568px 7.162499904632568px 0px rgba(0, 0, 0, 0.2),
   //   0px 7.162499904632568px 7.9583330154418945px 0px rgba(0, 0, 0, 0.25) inset;
   box-shadow: 0px 7.162499904632568px 7.162499904632568px 0px rgba(0, 0, 0, 0.2),
     0px 7.162499904632568px 7.9583330154418945px 0px rgba(0, 0, 0, 0.25) inset;
   cursor: pointer;
-  @media screen and (max-width: 768px) {
-    width: auto;
+  background-color: #fff;
+  @media screen and (min-width: 768px) {
+    width: 382px;
   }
   &__image {
     height: 272px;
@@ -16,9 +16,11 @@
     border-top-left-radius: 25px;
     overflow: hidden;
     background-color: #fff;
-
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
     img {
-      width: 100%;
+      // width: 100%;
       height: auto;
       max-width: 100%;
       max-height: 272px;
@@ -28,7 +30,7 @@
     }
   }
   &__footer {
-    min-height: 220px;
+    min-height: 200px;
     color: white;
     padding: 14px;
     padding-top: 8px;
@@ -36,12 +38,18 @@
     height: 100%;
   }
   &__title {
+    color: #fff;
+    text-align: right;
+    display: flex;
     h3 {
       color: #fff;
       text-align: right;
 
       font-size: 32px;
       font-weight: 700;
+      @media screen and (max-width: 768px) {
+        font-size: 16px;
+      }
     }
   }
   &__description {
@@ -49,6 +57,10 @@
     text-align: right;
     font-size: 16px;
     font-weight: 700;
+    display: flex;
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+    }
   }
 
   &__caption {

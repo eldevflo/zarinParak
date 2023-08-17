@@ -6,4 +6,5 @@ export interface Product {
   comment_admin: string;
   image: string;
   English_name: string;
+  information_En: string;
 }

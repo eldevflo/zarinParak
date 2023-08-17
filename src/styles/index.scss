@@ -78,3 +78,15 @@ a {
     text-align: right;
   }
 }
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  z-index: 99;
+}
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
+}

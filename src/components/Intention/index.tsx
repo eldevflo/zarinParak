@@ -22,12 +22,13 @@ function Intention() {
       },
     });
     gsap.to(".intention__granols__singles", {
-      y: 180,
+      y: 150,
       duration: 2,
       scrollTrigger: {
-        trigger: ".intention__granols__hill",
+        trigger: ".intention__granols__singles",
         scrub: true,
         start: "top +=100 ",
+        // end: "bottom+=500 bottom",
       },
     });
   }, []);

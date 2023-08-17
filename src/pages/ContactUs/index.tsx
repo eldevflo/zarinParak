@@ -7,12 +7,24 @@ function ContactUs() {
       <div className="about__section__title">{t("nav.contact")}</div>
       <div className="contact-us about__section__text">
         <div className="footer__media__phones">
-          <p>شماره تلفن ها</p>
+          <p
+            style={{
+              textAlign: "center",
+            }}
+          >
+            {t("titles.phones")}
+          </p>
           +989183692302 <br /> +989128662302 <br /> +989189657341 <br />
           +9808644433978
         </div>
         <div className="footer__media__email">
-          <p>ایمیل</p>
+          <p
+            style={{
+              textAlign: "center",
+            }}
+          >
+            {t("titles.email")}
+          </p>
           <a
             href="mailto:majidmakantalab@gmail.com"
             target="_blank"
@@ -21,7 +33,13 @@ function ContactUs() {
             majidmakantalab@gmail.com
           </a>
         </div>
-        <p>شبکه های اجتماعی</p>
+        <p
+          style={{
+            textAlign: "center",
+          }}
+        >
+          {t("titles.socials")}
+        </p>
         <ul className="footer__media__socials">
           <li>
             <a

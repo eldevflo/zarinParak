@@ -9,7 +9,8 @@ const token = import.meta.env.VITE_SERVER_SECRET_KEY;
 const CancelToken = axios.CancelToken;
 const source = CancelToken.source();
 export const request = axios.create({
-  baseURL: "https://backend.pciset.ir/api/v1",
+  baseURL: "https://backend.zarinplast.com/api/v1",
+  // baseURL: "https://backend.pciset.ir/api/v1",
   headers: {
     Authorization: token ? `Token ${token}` : "",
     "X-CSRFToken": isProduction ? csrfToken : null,

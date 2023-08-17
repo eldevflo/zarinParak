@@ -12,7 +12,10 @@
   "titles":{
     "products":"Products",
     "articles":"Articles",
-    "about":"About Us"
+    "about":"About Us",
+    "phones": "phones",
+    "email":"email",
+    "socials": "Social Media Links"
   },
   "intentions":{
     "title": "To Save The Earth"

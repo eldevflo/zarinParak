@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { request } from "../../utils/request";
 import { useTranslation } from "react-i18next";
-import Grid from "../../components/UI/Grid";
+// import Grid from "../../components/UI/Grid";
 import Loading from "../../components/UI/Loainding";
 import { Product } from "../../types/Product";
 
@@ -13,7 +13,7 @@ function Products() {
     setProducts(response.data);
     setLoading(false);
   }
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   useEffect(() => {
     getProducts();
@@ -36,11 +36,18 @@ function Products() {
                   <img src={product.image} alt="" />
                 </div>
                 <div className="product__left">
-                  <div className="product__title">{product.name}</div>
+                  <div className="product__title">
+                    {i18n.language === "en"
+                      ? product.English_name
+                      : product.name}
+                  </div>
                   <div
                     className="product__description"
                     dangerouslySetInnerHTML={{
-                      __html: product.information,
+                      __html:
+                        i18n.language === "en"
+                          ? product.information_En
+                          : product.information,
                     }}
                   ></div>
                 </div>

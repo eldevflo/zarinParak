@@ -13,7 +13,10 @@
   "titles":{
     "products": "محصولات",
     "articles": "مقالات",
-    "about":"درباره ما"
+    "about":"درباره ما",
+     "phones": "شماره تلفن ها",
+    "email":"ایمیل",
+    "socials": "شبکه های اجتماعی"
   }, 
     "intentions":{
     "title": "برای نجات کره زمین"
