@@ -13,6 +13,8 @@
     @media screen and (max-width: 768px) {
       flex-direction: column !important;
       text-align: center !important;
+      justify-content: center;
+      align-items: center;
     }
   }
   &__intro {
@@ -85,6 +87,9 @@
       display: flex;
       padding: 0;
       list-style-type: none;
+      a {
+        padding-right: 8px;
+      }
     }
   }
 }

@@ -6,6 +6,7 @@
 @use "./about.scss";
 @use "./products.scss";
 @use "./grid.scss";
+@use "./article.scss";
 :root {
   --primary: #2c1998;
   --secondary: hsla(271, 56%, 33%, 1);
@@ -83,10 +84,26 @@ a {
   position: absolute;
   top: 50%;
   z-index: 99;
+  transform: translateY(-50%);
+  z-index: 99;
 }
 .prev {
-  left: 0;
+  left: -20px;
 }
 .next {
-  right: 0;
+  right: -20px;
+}
+.see-more {
+  box-shadow: 0px 3.183333396911621px 3.183333396911621px 0px
+      rgba(0, 0, 0, 0.25),
+    0px 5.570833206176758px 4.775000095367432px 0px rgba(255, 255, 255, 0.25)
+      inset,
+    0px -3.9791667461395264px 3.183333396911621px 0px rgba(255, 255, 255, 0.35) inset;
+  border-radius: 100px;
+  width: 50px;
+  height: 50px;
+  background-color: #b106c0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

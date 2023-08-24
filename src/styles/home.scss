@@ -91,20 +91,20 @@
     &__mobile-list {
       display: none;
       margin-bottom: 32px;
+      position: relative;
       @media screen and (max-width: 768px) {
-        display: contents;
+        display: block;
       }
     }
   }
   &__articles {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: 807px;
-    background-color: #fff;
 
+    min-height: 807px;
+    background: #fff;
+    h1 {
+      color: black;
+    }
     &__title {
       h1 {
         font-size: 64px;

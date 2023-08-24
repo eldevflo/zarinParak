@@ -6,10 +6,6 @@ import logo from "../../assets/images/logo.png";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
 
-export const locales = {
-  en: { title: "English" },
-  fa: { title: "Farsi" },
-};
 function Navigation() {
   const { i18n, t } = useTranslation();
   const [open, setOpen] = useState(false);
@@ -19,7 +15,9 @@ function Navigation() {
       <nav className="nav container">
         <div className="nav__actions">
           <div className="nav__phone">
-            <Phone />
+            <a href="tel:+989183692302">
+              <Phone />
+            </a>
           </div>
           <div className="nav__language">
             <button

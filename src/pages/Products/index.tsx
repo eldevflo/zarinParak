@@ -4,19 +4,32 @@ import { useTranslation } from "react-i18next";
 // import Grid from "../../components/UI/Grid";
 import Loading from "../../components/UI/Loainding";
 import { Product } from "../../types/Product";
+import axios from "axios";
 
 function Products() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
+  const source = axios.CancelToken.source();
+
   async function getProducts() {
-    const response = await request.get("/Product");
-    setProducts(response.data);
-    setLoading(false);
+    try {
+      const response = await request.get("/Product", {
+        cancelToken: source.token,
+      });
+      setProducts(response.data);
+      setLoading(false);
+    } catch (error) {
+      console.log(error);
+      setLoading(false);
+    }
   }
   const { t, i18n } = useTranslation();
 
   useEffect(() => {
     getProducts();
+    return () => {
+      if (source) source.cancel;
+    };
   }, []);
   return (
     <div className="page-content products">
@@ -46,8 +59,12 @@ function Products() {
                     dangerouslySetInnerHTML={{
                       __html:
                         i18n.language === "en"
-                          ? product.information_En
-                          : product.information,
+                          ? product.information_Eng
+                            ? product.information_Eng
+                            : ""
+                          : product.information
+                          ? product.information
+                          : "",
                     }}
                   ></div>
                 </div>

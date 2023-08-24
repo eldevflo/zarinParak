@@ -47,6 +47,9 @@
   }
   &__actions {
     display: flex;
+    a {
+      display: flex;
+    }
   }
   &__phone,
   &__language button {
